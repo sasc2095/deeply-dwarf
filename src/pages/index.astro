@@ -1,16 +1,61 @@
 ---
+import Header from "../components/Header.astro";
 
+import Splash from "../components/Splash.astro";
+import CardRead from "../components/CardRead.astro";
+import CardWhy from "../components/CardWhy.astro";
+import CardAmbassador from "../components/CardAmbassador.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <Header />
+
+  <main>
+    <Splash />
+
+    <CardRead
+      header="Bliv Gratis Medlem"
+      text={`Som studerende er du gratis medlem af CAs a-kasse og ydelser, derudover får du CAs advokathjælp.  
+			CA Advokathjælp er gratis for studerende og kan hjælpe dig med at tjekke kontrakten på dit studiejob og juridisk rådgivning af professionelle advokater. `}
+    >
+      <img src="/måge.png" alt="picture" />
+    </CardRead>
+
+    <CardRead header="Gode råd og sparing til at kickstarte din karriere">
+      <img src="/måge.png" alt="picture" />
+    </CardRead>
+
+    <CardRead header="Medlemsfordele og rabatter" text="Som medlem af CA får du adgang til gratis kurser i Adobe programmer, kontante rabatter, billige forsikringer og meget mere.">
+      <img src="/måge.png" alt="picture" />
+    </CardRead>
+
+    <h2 class="whyCA">Hvorfor CA?</h2>
+    <div class="grid_1_1_1">
+      <CardWhy header="Skal du have en a-kasse som studerende?">
+        <img src="/måge.png" alt="picture" />
+      </CardWhy>
+      <CardWhy header="Hvad tilbyder CA?">
+        <img src="/måge.png" alt="picture" />
+      </CardWhy>
+      <CardWhy header="Bliv ambassadør">
+        <img src="/måge.png" alt="picture" />
+      </CardWhy>
+    </div>
+
+    <h2>Mød vores ambassadører</h2>
+    <div class="grid_1_1_1_1">
+      <CardAmbassador header="Monica" text="Ambassadør på KEA">
+        <img src="/måge.png" alt="picture" />
+      </CardAmbassador>
+      <CardAmbassador header="Monica" text="Ambassadør på KEA">
+        <img src="/måge.png" alt="picture" />
+      </CardAmbassador>
+      <CardAmbassador header="Monica" text="Ambassadør på KEA">
+        <img src="/måge.png" alt="picture" />
+      </CardAmbassador>
+      <CardAmbassador header="Monica" text="Ambassadør på KEA">
+        <img src="/måge.png" alt="picture" />
+      </CardAmbassador>
+    </div>
+  </main>
 </html>

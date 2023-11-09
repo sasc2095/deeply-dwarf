@@ -1,0 +1,17 @@
+---
+const { header } = Astro.props;
+---
+
+<article>
+  <h2>{header}</h2>
+  <div class="box">
+    <h3></h3>
+    <slot />
+  </div>
+</article>
+
+<style>
+  img {
+    border-radius: 150px;
+  }
+</style>

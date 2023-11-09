@@ -1,0 +1,50 @@
+---
+import "../css/style.css";
+import BurgerMenu from "./BurgerMenu.astro";
+import BurgerDropDown from "./BurgerDropDown..astro";
+import SearchBar from "./SearchBar.astro";
+---
+
+<nav>
+  <button class="eng">EN</button>
+  <a class="login" href="/"><img src="../../public/SVG/login.svg" /></a>
+  <a class="search" href="/"><img src="../../public/SVG/search.svg" /></a>
+  <SearchBar />
+  <article>
+    <BurgerMenu />
+    <BurgerDropDown />
+  </article>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    gap: 100px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:active {
+    text-decoration: underline;
+  }
+
+  article {
+    display: none;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    nav {
+      display: none;
+    }
+
+    article {
+      display: block;
+    }
+  }
+</style>

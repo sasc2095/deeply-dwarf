@@ -1,0 +1,40 @@
+---
+import "../css/style.css";
+import Navigation from "./Navigation.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="../../public/CA_studiepartner/icon" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>CA Kampagnesite</title>
+  </head>
+</html>
+<header>
+  <a href="/"> <img src="../../public/CA_studiepartner/#4eb3b6" alt="CA studiepartner logo" /></a>
+  <Navigation />
+</header>
+
+<style>
+  article {
+    display: flex;
+    background-color: #181818;
+    padding: 10px;
+    justify-content: space-evenly;
+    gap: 40%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    height: 5rem;
+  }
+  img {
+    max-height: 50px;
+  }
+
+  @media screen and (max-width: 800px) {
+  }
+</style>
